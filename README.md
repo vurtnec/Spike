@@ -1,12 +1,15 @@
 # Spike
 
+### Installation
+- Install zookeeper
+- Install kafka
+- Install docker
+- Exec $docker-compose up -d to install redis & mysql, or you can install those two in your local, please do not use mysql version 8+.
 
+Create a counter key in redis.
 
-## QuickStart
-
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
+## SQL
+CREATE TABLE SPIKE (msg VARCHAR(2000), date TIMESTAMP);
 
 ### Development
 
@@ -16,18 +19,6 @@ $ npm run dev
 $ open http://localhost:7001/
 ```
 
-### Deploy
+### test
+use postman to request http://localhost:7001/api/spike/<productId>, make to type as PUT.
 
-```bash
-$ npm start
-$ npm stop
-```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
