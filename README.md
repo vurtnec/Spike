@@ -20,5 +20,5 @@ $ open http://localhost:7001/
 ```
 
 ### test
-use postman to request http://localhost:7001/api/spike/<productId>, make to type as PUT.
+use postman to request http://localhost:7001/api/spike/'productId', make to type as PUT.
 
